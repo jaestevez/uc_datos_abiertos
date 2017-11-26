@@ -64,7 +64,7 @@
 										class="fa fa-bar-chart"></i> Data quality </span></a></li>
 								<li><a href="/prototipoWEB/html/opendata.jsp"><i
 										class="fa fa-check-square-o"></i> Data maturity </a></li>
-								<li><a href="/prototipoWEB/html/dashboard.jsp"><i
+								<li><a href="/prototipoWEB/html/dashboard-desc.jsp"><i
 										class="fa fa-bar-chart"></i> Dashboard Desc</a></li>
 								<li><a href="/prototipoWEB/html/dashboard.jsp"><i
 										class="fa fa-bar-chart"></i> Dashboard</a></li>
