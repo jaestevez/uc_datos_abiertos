@@ -1,156 +1,175 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <!-- Meta, title, CSS, favicons, etc. -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- Meta, title, CSS, favicons, etc. -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Prototype </title>
+<title>Prototype</title>
 
-    <!-- Bootstrap -->
-    <link href="<%=request.getContextPath()%>/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link href="<%=request.getContextPath()%>/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <!-- NProgress -->
-    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
-    <!-- bootstrap-progressbar -->
-    <link href="<%=request.getContextPath()%>/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
-    <!-- bootstrap-daterangepicker -->
-    <link href="<%=request.getContextPath()%>/vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
-    
-    <!-- Custom Theme Style -->
-    <link href="../build/css/custom.min.css" rel="stylesheet">
-  </head>
+<!-- Bootstrap -->
+<link
+	href="<%=request.getContextPath()%>/vendors/bootstrap/dist/css/bootstrap.min.css"
+	rel="stylesheet">
+<!-- Font Awesome -->
+<link
+	href="<%=request.getContextPath()%>/vendors/font-awesome/css/font-awesome.min.css"
+	rel="stylesheet">
+<!-- NProgress -->
+<link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+<!-- bootstrap-progressbar -->
+<link
+	href="<%=request.getContextPath()%>/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css"
+	rel="stylesheet">
+<!-- bootstrap-daterangepicker -->
+<link
+	href="<%=request.getContextPath()%>/vendors/bootstrap-daterangepicker/daterangepicker.css"
+	rel="stylesheet">
 
-  <body class="nav-md">
-    <div class="container body">
-      <div class="main_container">
-        <div class="col-md-3 left_col">
-          <div class="left_col scroll-view">
-            <div class="navbar nav_title" style="border: 0;">
-              <a href="ingresoDatos.jsp" class="site_title"><i class="fa fa-cogs"></i> <span>Prototype</span></a>
-            </div>
+<!-- Custom Theme Style -->
+<link href="../build/css/custom.min.css" rel="stylesheet">
+</head>
 
-            <div class="clearfix"></div>
+<body class="nav-md">
+	<div class="container body">
+		<div class="main_container">
+			<div class="col-md-3 left_col">
+				<div class="left_col scroll-view">
+					<div class="navbar nav_title" style="border: 0;">
+						<a href="ingresoDatos.jsp" class="site_title"><i
+							class="fa fa-cogs"></i> <span>Prototype</span></a>
+					</div>
 
-          
-            <br />
+					<div class="clearfix"></div>
 
-            <!-- sidebar menu -->
-            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
-              <div class="menu_section">
-                <h3>General</h3>
-                <ul class="nav side-menu">
-                  <li><a href="/prototipoWEB/html/ingresoDatos.jsp"><i class="fa fa-database"></i> Add data </a>
-                   
-                  </li>
-                  <li><a href="/prototipoWEB/html/ingresoEstructuras.jsp"><i class="fa fa-database"></i> Add structure </a>
-                   
-                  </li>
-                  <li><a href="/prototipoWEB/Metricas"><i class="fa fa-bar-chart"></i> Data quality </span></a>
-                   
-                  </li>
-                  <li><a href="/prototipoWEB/html/opendata.jsp"><i class="fa fa-check-square-o"></i> Data maturity </a>
-                   
-                  </li>
-                </ul>
-              </div>
-              
 
-            </div>
-            <!-- /sidebar menu -->
+					<br />
 
-            <!-- /menu footer buttons -->
-            <div class="sidebar-footer hidden-small">
-              <a data-toggle="tooltip" data-placement="top" title="Settings">
-                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
-              </a>
-              <a data-toggle="tooltip" data-placement="top" title="FullScreen">
-                <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
-              </a>
-              <a data-toggle="tooltip" data-placement="top" title="Lock">
-                <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
-              </a>
-              <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
-                <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
-              </a>
-            </div>
-            <!-- /menu footer buttons -->
-          </div>
-        </div>
+					<!-- sidebar menu -->
+					<div id="sidebar-menu"
+						class="main_menu_side hidden-print main_menu">
+						<div class="menu_section">
+							<h3>General</h3>
+							<ul class="nav side-menu">
+								<li><a href="/prototipoWEB/html/ingresoDatos.jsp"><i
+										class="fa fa-database"></i> Add data </a></li>
+								<li><a href="/prototipoWEB/html/ingresoEstructuras.jsp"><i
+										class="fa fa-database"></i> Add structure </a></li>
+								<li><a href="/prototipoWEB/html/Metricas.jsp"><i
+										class="fa fa-bar-chart"></i> Data quality </span></a></li>
+								<li><a href="/prototipoWEB/html/opendata.jsp"><i
+										class="fa fa-check-square-o"></i> Data maturity </a></li>
+								<li><a href="/prototipoWEB/html/dashboard.jsp"><i
+										class="fa fa-bar-chart"></i> Dashboard Desc</a></li>
+								<li><a href="/prototipoWEB/html/dashboard.jsp"><i
+										class="fa fa-bar-chart"></i> Dashboard</a></li>
+							</ul>
+						</div>
 
-        <!-- top navigation -->
-        <div class="top_nav">
-          <div class="nav_menu">
-            <nav>
-              <div class="nav toggle">
-                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
-              </div>
 
-              <br>
-            </nav>
-          </div>
-        </div>
-        <!-- /top navigation -->
+					</div>
+					<!-- /sidebar menu -->
 
-        <!-- page content -->
-        <div class="right_col" role="main">
-        
-        
-        
-        <div class="container">
-  <h2>Prototype</h2>
-  <div class="panel panel-default">
-    <div class="panel-heading">Add structure</div>
-    <div class="panel-body">
-    	<form method="post" action="/prototipoWEB/IngresoEstructuras">
-        <div class="text-center"> <h1>Add structure</h1></div>
-        <div class="row">
-        	<div class="col-md-3 col-md-offset-3">Enter an ID to save your structure in the prototype for analysis:
-				<input required="" type="text" name="campos" class="form-control" maxlength="9">
-				Enter the repository:
-				<input required="" type="text" name="dominio" class="form-control">
+					<!-- /menu footer buttons -->
+					<div class="sidebar-footer hidden-small">
+						<a data-toggle="tooltip" data-placement="top" title="Settings">
+							<span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+						</a> <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+							<span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+						</a> <a data-toggle="tooltip" data-placement="top" title="Lock"> <span
+							class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+						</a> <a data-toggle="tooltip" data-placement="top" title="Logout"
+							href="login.html"> <span class="glyphicon glyphicon-off"
+							aria-hidden="true"></span>
+						</a>
+					</div>
+					<!-- /menu footer buttons -->
+				</div>
 			</div>
-        	
+
+			<!-- top navigation -->
+			<div class="top_nav">
+				<div class="nav_menu">
+					<nav>
+						<div class="nav toggle">
+							<a id="menu_toggle"><i class="fa fa-bars"></i></a>
+						</div>
+
+						<br>
+					</nav>
+				</div>
 			</div>
-        	<div class="col-md-1"><br><br><input type="submit" value="enviar" class="form-control"></div>
-        </div>
-        </form>
-    
-    
-    </div>
-  </div>
-</div>
-        
-          
-         
-	        		
-        </div>
-        <!-- /page content -->
+			<!-- /top navigation -->
 
-        <!-- footer content -->
-        <footer>
-          <div class="pull-right">
-            Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
-          </div>
-          <div class="clearfix"></div>
-        </footer>
-        <!-- /footer content -->
-      </div>
-    </div>
+			<!-- page content -->
+			<div class="right_col" role="main">
 
-    <!-- jQuery -->
-    <script src="<%=request.getContextPath()%>/vendors/jquery/dist/jquery.min.js"></script>
-    <!-- Bootstrap -->
-    <script src="<%=request.getContextPath()%>/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!-- FastClick -->
-    <!-- Custom Theme Scripts -->
-    <script src="<%=request.getContextPath()%>/build/js/custom.min.js"></script>
 
-  </body>
+
+				<div class="container">
+					<h2>Prototype</h2>
+					<div class="panel panel-default">
+						<div class="panel-heading">Add structure</div>
+						<div class="panel-body">
+							<form method="post" action="/prototipoWEB/IngresoEstructuras">
+								<div class="text-center">
+									<h1>Add structure</h1>
+								</div>
+								<div class="row">
+									<div class="col-md-3 col-md-offset-3">
+										Enter an ID to save your structure in the prototype for
+										analysis: <input required="" type="text" name="campos"
+											class="form-control" maxlength="9"> Enter the
+										repository: <input required="" type="text" name="dominio"
+											class="form-control">
+									</div>
+
+								</div>
+								<div class="col-md-1">
+									<br>
+									<br>
+									<input type="submit" value="enviar" class="form-control">
+								</div>
+						</div>
+						</form>
+
+
+					</div>
+				</div>
+			</div>
+
+
+
+
+		</div>
+		<!-- /page content -->
+
+		<!-- footer content -->
+		<footer>
+			<div class="pull-right">
+				Gentelella - Bootstrap Admin Template by <a
+					href="https://colorlib.com">Colorlib</a>
+			</div>
+			<div class="clearfix"></div>
+		</footer>
+		<!-- /footer content -->
+	</div>
+	</div>
+
+	<!-- jQuery -->
+	<script
+		src="<%=request.getContextPath()%>/vendors/jquery/dist/jquery.min.js"></script>
+	<!-- Bootstrap -->
+	<script
+		src="<%=request.getContextPath()%>/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+	<!-- FastClick -->
+	<!-- Custom Theme Scripts -->
+	<script src="<%=request.getContextPath()%>/build/js/custom.min.js"></script>
+
+</body>
 </html>

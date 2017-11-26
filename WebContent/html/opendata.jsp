@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<%@ page import= "com.as.samples.mongoDB" %> 
+<%@ page import="com.as.samples.mongoDB"%>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <!-- Meta, title, CSS, favicons, etc. -->
@@ -32,25 +32,19 @@
 <!-- Custom Theme Style -->
 <link href="<%=request.getContextPath()%>/build/css/custom.min.css"
 	rel="stylesheet">
-	
-
 </head>
-
 <body class="nav-md">
 	<div class="container body">
 		<div class="main_container">
 			<div class="col-md-3 left_col">
 				<div class="left_col scroll-view">
 					<div class="navbar nav_title" style="border: 0;">
-						<a href="ingresoDatos.jsp" class="site_title"><i class="fa fa-cogs"></i>
-							<span>Prototype</span></a>
+						<a href="ingresoDatos.jsp" class="site_title"><i
+							class="fa fa-cogs"></i> <span>Prototype</span></a>
 					</div>
 
 					<div class="clearfix"></div>
-
-
 					<br />
-
 					<!-- sidebar menu -->
 					<div id="sidebar-menu"
 						class="main_menu_side hidden-print main_menu">
@@ -59,19 +53,18 @@
 							<ul class="nav side-menu">
 								<li><a href="/prototipoWEB/html/ingresoDatos.jsp"><i
 										class="fa fa-database"></i> Add data </a></li>
-										<li><a href="/prototipoWEB/html/ingresoEstructuras.jsp"><i class="fa fa-database"></i> Add structure </a>
-                   
-                  </li>
-								<li><a href="/prototipoWEB/Metricas"><i
+								<li><a href="/prototipoWEB/html/ingresoEstructuras.jsp"><i
+										class="fa fa-database"></i> Add structure </a></li>
+								<li><a href="/prototipoWEB/html/Metricas.jsp"><i
 										class="fa fa-bar-chart"></i> Data quality </span></a></li>
 								<li><a href="/prototipoWEB/html/opendata.jsp"><i
 										class="fa fa-check-square-o"></i> Data maturity </a></li>
-										
-
+								<li><a href="/prototipoWEB/html/dashboard.jsp"><i
+										class="fa fa-bar-chart"></i> Dashboard Desc</a></li>
+								<li><a href="/prototipoWEB/html/dashboard.jsp"><i
+										class="fa fa-bar-chart"></i> Dashboard</a></li>
 							</ul>
 						</div>
-
-
 					</div>
 					<!-- /sidebar menu -->
 
@@ -108,9 +101,6 @@
 
 			<!-- page content -->
 			<div class="right_col" role="main">
-
-
-
 				<div class="container">
 					<h2>Prototipo</h2>
 					<div class="panel panel-default">
@@ -125,52 +115,55 @@
 							</ul>
 
 							<h1>General</h1>
-							
-							
+
+
 							</table>
 							<h2>Complete</h2>
 							<br>
-							 <iframe  scrolling="no" style="border-width:0px;" src="http://172.30.4.42:8081/api/rest/public/process/completes?"  width="550" height="400"></iframe>
+							<iframe scrolling="no" style="border-width: 0px;"
+								src="http://172.30.4.42:8081/api/rest/public/process/completes?"
+								width="550" height="400"></iframe>
 							<br>
 							<h2>Primary</h2>
-							 <iframe  scrolling="yes" style="border-width:0px;" src="http://172.30.4.42:8081/api/rest/public/process/primarios%20general?"  width="550" height="200"></iframe>
+							<iframe scrolling="yes" style="border-width: 0px;"
+								src="http://172.30.4.42:8081/api/rest/public/process/primarios%20general?"
+								width="550" height="200"></iframe>
 							<br>
 							<h2>Timely</h2>
 							<br>
-							 <iframe  scrolling="yes" style="border-width:0px;" src="http://172.30.4.42:8081/api/rest/public/process/timely?"  width="550" height="300"></iframe>
+							<iframe scrolling="yes" style="border-width: 0px;"
+								src="http://172.30.4.42:8081/api/rest/public/process/timely?"
+								width="550" height="300"></iframe>
 							<br>
 							<h2>Accessible</h2>
-							 <iframe  scrolling="yes" style="border-width:0px;" src="http://172.30.4.42:8081/api/rest/public/process/accesibles?"  width="550" height="200"></iframe>
+							<iframe scrolling="yes" style="border-width: 0px;"
+								src="http://172.30.4.42:8081/api/rest/public/process/accesibles?"
+								width="550" height="200"></iframe>
 							<br>
 							<h2>Machine Processable</h2>
-							<iframe  scrolling="yes" style="border-width:0px;" src="http://172.30.4.42:8081/api/rest/public/process/machine_proccesable?"  width="300" height="200"></iframe>
+							<iframe scrolling="yes" style="border-width: 0px;"
+								src="http://172.30.4.42:8081/api/rest/public/process/machine_proccesable?"
+								width="300" height="200"></iframe>
 							<br>
 							<h2>Non-Discriminatory</h2>
-							<iframe  scrolling="yes" style="border-width:0px;" src="http://172.30.4.42:8081/api/rest/public/process/nodiscriminatorio%20general?"  width="550" height="400"></iframe>
+							<iframe scrolling="yes" style="border-width: 0px;"
+								src="http://172.30.4.42:8081/api/rest/public/process/nodiscriminatorio%20general?"
+								width="550" height="400"></iframe>
 							<br>
 							<h2>Non-Proprietary</h2>
-							<iframe  scrolling="yes" style="border-width:0px;" src="http://172.30.4.42:8081/api/rest/public/process/no%20propietario%20general?"  width="550" height="200"></iframe>
+							<iframe scrolling="yes" style="border-width: 0px;"
+								src="http://172.30.4.42:8081/api/rest/public/process/no%20propietario%20general?"
+								width="550" height="200"></iframe>
 							<br>
 							<h2>License Free</h2>
-							<iframe  scrolling="yes" style="border-width:0px;" src="http://172.30.4.42:8081/api/rest/public/process/license%20general?"  width="550" height="200"></iframe>
-
+							<iframe scrolling="yes" style="border-width: 0px;"
+								src="http://172.30.4.42:8081/api/rest/public/process/license%20general?"
+								width="550" height="200"></iframe>
 							<br>
-
-
-
 						</div>
 					</div>
-
-
-
 				</div>
 			</div>
-
-
-
-
-
-
 		</div>
 		<!-- /page content -->
 
@@ -185,9 +178,6 @@
 		<!-- /footer content -->
 	</div>
 	</div>
-
-
-
 
 	<!-- jQuery -->
 	<script
