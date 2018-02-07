@@ -68,6 +68,13 @@
 										class="fa fa-bar-chart"></i> Dashboard Desc</a></li>
 								<li><a href="/prototipoWEB/html/dashboard.jsp"><i
 										class="fa fa-bar-chart"></i> Dashboard</a></li>
+										
+								<li><a href="/prototipoWEB/html/DashBoard-Predicitivo.jsp"><i
+										class="fa fa-bar-chart"></i> DashBoard-Predictivo</a></li>
+								<li><a href="/prototipoWEB/html/DashBoard-Predicitivo-SECOPI.jsp"><i
+										class="fa fa-bar-chart"></i> DashBoard-Predictivo-SECOPI</a></li>
+								<li><a href="/prototipoWEB/html/DashBoard-Predicitivo-SECOPII.jsp"><i
+										class="fa fa-bar-chart"></i> DashBoard-Predictivo-SECOPII</a></li>
 							</ul>
 						</div>
 

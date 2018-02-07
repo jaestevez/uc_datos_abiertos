@@ -1,8 +1,6 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html lang="en">
-
+<%@ page import="com.as.samples.mongoDB"%>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <!-- Meta, title, CSS, favicons, etc. -->
@@ -32,9 +30,9 @@
 	rel="stylesheet">
 
 <!-- Custom Theme Style -->
-<link href="../build/css/custom.min.css" rel="stylesheet">
+<link href="<%=request.getContextPath()%>/build/css/custom.min.css"
+	rel="stylesheet">
 </head>
-
 <body class="nav-md">
 	<div class="container body">
 		<div class="main_container">
@@ -44,6 +42,7 @@
 						<a href="ingresoDatos.jsp" class="site_title"><i
 							class="fa fa-cogs"></i> <span>Prototype</span></a>
 					</div>
+
 					<div class="clearfix"></div>
 					<br />
 					<!-- sidebar menu -->
@@ -60,7 +59,7 @@
 										class="fa fa-bar-chart"></i> Data quality </span></a></li>
 								<li><a href="/prototipoWEB/html/opendata.jsp"><i
 										class="fa fa-check-square-o"></i> Data maturity </a></li>
-								<li><a href="/prototipoWEB/html/dashboard-desc.jsp"><i
+								<li><a href="/prototipoWEB/html/dashboard.jsp"><i
 										class="fa fa-bar-chart"></i> Dashboard Desc</a></li>
 								<li><a href="/prototipoWEB/html/dashboard.jsp"><i
 										class="fa fa-bar-chart"></i> Dashboard</a></li>
@@ -106,50 +105,30 @@
 				</div>
 			</div>
 			<!-- /top navigation -->
+
 			<!-- page content -->
 			<div class="right_col" role="main">
 				<div class="container">
-					<h2>Prototype</h2>
-					<div class="panel panel-default">
-						<div class="panel-heading"></div>
-						<div class="panel-body">
-							<form method="post" action="/prototipoWEB/recibirDatosServlet">
-								<div class="text-center">
-									<h1>Enter ID</h1>
-								</div>
-								<div class="row">
-									<div class="col-md-3 col-md-offset-3">
-										Enter IDs: IDs must be separated by commas. (xxxx,xxxx,xxxx) <input
-											required="" type="text" name="ids" class="form-control">
-									</div>
-									<div class="col-md-3">
-										Enter the repository:<br>
-										<br> <input required="" type="text" name="domain"
-											class="form-control"><br>
-									</div>
-									<div class="col-md-1">
-										<br>
-										<br>
-										<input type="submit" value="enviar" class="form-control">
-									</div>
-								</div>
-							</form>
-						</div>
+					<div class="col-xs-12">
+						<div class='tableauPlaceholder' id='viz1517973272436' style='position: relative'><noscript><a href='#'><img alt='Computadores para Educar ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Pronostico_Computadores_Para_Educar_0&#47;Pronostico&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Pronostico_Computadores_Para_Educar_0&#47;Pronostico' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Pronostico_Computadores_Para_Educar_0&#47;Pronostico&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1517973272436');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
 					</div>
+
 				</div>
 			</div>
-			<!-- /page content -->
-
-			<!-- footer content -->
-			<footer>
-				<div class="pull-right">
-					Gentelella - Bootstrap Admin Template by <a
-						href="https://colorlib.com">Colorlib</a>
-				</div>
-				<div class="clearfix"></div>
-			</footer>
-			<!-- /footer content -->
 		</div>
+	</div>
+	<!-- /page content -->
+
+	<!-- footer content -->
+	<footer>
+		<div class="pull-right">
+			Gentelella - Bootstrap Admin Template by <a
+				href="https://colorlib.com">Colorlib</a>
+		</div>
+		<div class="clearfix"></div>
+	</footer>
+	<!-- /footer content -->
+	</div>
 	</div>
 
 	<!-- jQuery -->
@@ -161,6 +140,3 @@
 	<!-- FastClick -->
 	<!-- Custom Theme Scripts -->
 	<script src="<%=request.getContextPath()%>/build/js/custom.min.js"></script>
-
-</body>
-</html>
